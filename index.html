@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MarcoPolo</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <style>
+    .well{
+        margin-bottom: 0px;
+    }
+    </style>
+</head>
+<body ng-app="app">
+
+    <div ng-controller="marcoPoloController">
+
+        <div>
+            <div class="row">
+                <div class="col-sm-12 well">
+                    Header | <a href="#/home">Home</a>
+                </div>
+            </div>
+            <div class="col-sm-3 well" style="height:100%">
+                <ul>
+                    <li><a href="#/marcopolo">MarcoPolo</a></li>
+                </ul>
+            </div>
+                <div class="col-sm-9 well" style="height:100%">
+                    <div ui-view></div>
+                </div>
+             </div>
+    </div>
+    
+  
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.3/angular-ui-router.min.js"></script>
+<script src="app.js"></script>
+<script src="/controllers/controller.js"></script>
+<script src="/services/factory.js"></script> 
+<script src="/directives/myDirective.js"></script>
+ 
+</body>
+</html>
